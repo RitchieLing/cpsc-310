@@ -1,0 +1,37 @@
+{
+	"title": "SELECT courses_dept, SUM(courses_avg) as sum, SUM(courses_avg) as sum2 WHERE courses_avg > 96 GROUP by courses_dept ORDER BY sum",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"sum",
+				"sum2"
+			],
+			"ORDER": "sum"
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept"
+			],
+			"APPLY": [
+				{
+					"sum": {
+						"SUM": "courses_avg"
+					}
+				},
+				{
+					"sum2": {
+						"SUM": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [{"courses_dept":"educ","sum":97.5,"sum2":97.5},{"courses_dept":"crwr","sum":196,"sum2":196},{"courses_dept":"eece","sum":197.5,"sum2":197.5},{"courses_dept":"spph","sum":197.96,"sum2":197.96},{"courses_dept":"cnps","sum":294.13,"sum2":294.13},{"courses_dept":"math","sum":783.2,"sum2":783.2},{"courses_dept":"nurs","sum":1177.72,"sum2":1177.72},{"courses_dept":"epse","sum":1862.24,"sum2":1862.24}]
+}

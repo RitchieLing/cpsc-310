@@ -1,0 +1,33 @@
+{
+  "title": "order by invalid key",
+  "input": {
+    "WHERE": {
+      "NOT": {
+        "NOT": {
+          "AND": [
+            {
+              "GT": {
+                "courses_avg": 93
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "cpsc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg"
+      ],
+      "ORDER": ["courses_dept"]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

@@ -1,0 +1,30 @@
+{
+	"title": "wildcard in the middle of string",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"courses_avg": 92
+					}
+				},
+				{
+					"IS": {
+						"courses_dept": "cps*c"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_uuid",
+				"courses_avg"
+			],
+			"ORDER": "courses_avg"
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}
+

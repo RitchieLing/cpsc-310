@@ -1,0 +1,44 @@
+{
+  "title": "basic two condition AND",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "courses_avg": 92
+          }
+        },
+        {
+          "IS": {
+            "courses_dept": "adhe"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_dept": "adhe",
+      "courses_id": "329",
+      "courses_avg": 93.33
+    },
+    {
+      "courses_dept": "adhe",
+      "courses_id": "329",
+      "courses_avg": 96.11
+    },
+    {
+      "courses_dept": "adhe",
+      "courses_id": "329",
+      "courses_avg": 92.54
+    }
+  ]
+}

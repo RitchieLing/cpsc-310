@@ -1,0 +1,31 @@
+{
+	"title": "SELECT courses_dept, AVG(courses_avg) as dept-avg WHERE courses_avg > 97 GROUP by courses_dept ORDER BY dept-avg",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"dept-avg"
+			],
+			"ORDER": "dept-avg"
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept"
+			],
+			"APPLY": [
+				{
+					"dept-avg": {
+						"AVG": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [{"courses_dept":"educ","dept-avg":97.5},{"courses_dept":"math","dept-avg":97.9},{"courses_dept":"crwr","dept-avg":98},{"courses_dept":"epse","dept-avg":98.01},{"courses_dept":"cnps","dept-avg":98.04},{"courses_dept":"nurs","dept-avg":98.14},{"courses_dept":"eece","dept-avg":98.75},{"courses_dept":"spph","dept-avg":98.98}]
+}

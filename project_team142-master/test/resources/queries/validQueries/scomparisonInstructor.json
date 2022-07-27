@@ -1,0 +1,112 @@
+{
+  "title": "test s field instructor",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_instructor": "walter, pierre"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg",
+        "courses_instructor"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_dept": "edst",
+      "courses_id": "503",
+      "courses_avg": 88.05,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "503",
+      "courses_avg": 88.55,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "503",
+      "courses_avg": 88.25,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "514",
+      "courses_avg": 90,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "514",
+      "courses_avg": 88.32,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "514",
+      "courses_avg": 89.14,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "514",
+      "courses_avg": 88,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "535",
+      "courses_avg": 88.38,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "535",
+      "courses_avg": 88.71,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "535",
+      "courses_avg": 88.94,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "535",
+      "courses_avg": 89,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 88.7,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.67,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.67,
+      "courses_instructor": "walter, pierre"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.38,
+      "courses_instructor": "walter, pierre"
+    }
+  ]
+}
+

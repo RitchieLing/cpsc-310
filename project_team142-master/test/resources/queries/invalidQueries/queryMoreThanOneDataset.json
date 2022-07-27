@@ -1,0 +1,19 @@
+{
+  "title": "cannot query more than one dataset",
+  "input": {
+	  "WHERE": {
+		  "EQ": {
+			  "courses1_avg": 95
+		  }
+	  },
+	  "OPTIONS": {
+		  "COLUMNS": [
+			  "courses_id",
+			  "courses_dept"
+		  ],
+		  "ORDER": "courses_dept"
+	  }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

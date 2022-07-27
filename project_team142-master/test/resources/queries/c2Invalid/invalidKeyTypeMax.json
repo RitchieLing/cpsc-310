@@ -1,0 +1,31 @@
+{
+	"title": "invalid key type for max, should only take numeric keys",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"max"
+			],
+			"ORDER": "max"
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept"
+			],
+			"APPLY": [
+				{
+					"max": {
+						"MAX": "courses_id"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

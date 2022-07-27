@@ -1,0 +1,31 @@
+{
+	"title": "column key not in transformation keys",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"dept-avg"
+			],
+			"ORDER": "dept-avg"
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_id"
+			],
+			"APPLY": [
+				{
+					"dept-avg": {
+						"AVG": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

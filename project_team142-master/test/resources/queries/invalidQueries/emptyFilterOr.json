@@ -1,0 +1,17 @@
+{
+  "title": "empty key for or",
+  "input" :{
+    "WHERE": {
+      "OR": [
+        {}
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_id"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

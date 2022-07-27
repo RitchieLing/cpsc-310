@@ -1,0 +1,28 @@
+{
+  "title": "test s field uuid",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_uuid": "44717"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg",
+        "courses_uuid"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_dept": "nurs",
+      "courses_id": "595",
+      "courses_avg": 70,
+      "courses_uuid": "44717"
+    }
+  ]
+}
+

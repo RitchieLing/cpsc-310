@@ -1,0 +1,31 @@
+{
+	"title": "SELECT courses_dept, MAX(courses_avg) as max WHERE courses_avg > 97 GROUP by courses_dept ORDER BY max",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"max"
+			],
+			"ORDER": "max"
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept"
+			],
+			"APPLY": [
+				{
+					"max": {
+						"MAX": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [{"courses_dept":"educ","max":97.5},{"courses_dept":"crwr","max":98},{"courses_dept":"nurs","max":98.71},{"courses_dept":"eece","max":98.75},{"courses_dept":"epse","max":98.8},{"courses_dept":"spph","max":98.98},{"courses_dept":"cnps","max":99.19},{"courses_dept":"math","max":99.78}]
+}

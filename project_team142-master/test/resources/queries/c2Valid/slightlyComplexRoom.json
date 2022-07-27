@@ -1,0 +1,34 @@
+{
+	"title": "room query",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"rooms_furniture": "*Tables*"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 250
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_number",
+				"rooms_shortname",
+				"rooms_seats"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"rooms_seats"
+				]
+			}
+		}
+	},
+	"errorExpected": false,
+	"with": [{"rooms_number":"A","rooms_shortname":"OSBO","rooms_seats":442},{"rooms_number":"100","rooms_shortname":"HEBB","rooms_seats":375},{"rooms_number":"1001","rooms_shortname":"LSC","rooms_seats":350},{"rooms_number":"1002","rooms_shortname":"LSC","rooms_seats":350},{"rooms_number":"220A","rooms_shortname":"SRC","rooms_seats":299},{"rooms_number":"220B","rooms_shortname":"SRC","rooms_seats":299},{"rooms_number":"220C","rooms_shortname":"SRC","rooms_seats":299},{"rooms_number":"098","rooms_shortname":"ANGU","rooms_seats":260}]
+}

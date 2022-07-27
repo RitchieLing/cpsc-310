@@ -1,0 +1,46 @@
+{
+  "title": "test m field audit",
+  "input": {
+    "WHERE": {
+      "EQ": {
+        "courses_audit": 10
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_audit"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_dept": "frst",
+      "courses_id": "430",
+      "courses_audit": 10
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "530",
+      "courses_audit": 10
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "530",
+      "courses_audit": 10
+    },
+    {
+      "courses_dept": "rhsc",
+      "courses_id": "501",
+      "courses_audit": 10
+    },
+    {
+      "courses_dept": "rhsc",
+      "courses_id": "509",
+      "courses_audit": 10
+    }
+  ]
+}
+

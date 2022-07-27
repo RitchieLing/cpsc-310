@@ -1,0 +1,12 @@
+{
+  "title": "missing where",
+  "input" :{
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_id"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

@@ -1,0 +1,31 @@
+{
+	"title": "SELECT courses_dept, AVG(courses_avg) as dept-avg WHERE courses_avg > 97 GROUP by courses_dept ORDER BY dept-avg",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"dept-avg"
+			],
+			"ORDER": "dept-avg"
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				{"courses_dept": "cpsc"}
+			],
+			"APPLY": [
+				{
+					"dept-avg": {
+						"AVG": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

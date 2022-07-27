@@ -1,0 +1,71 @@
+{
+  "title": "test m field fail",
+  "input": {
+    "WHERE": {
+      "EQ": {
+        "courses_fail": 50
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_fail"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_dept": "bioc",
+      "courses_id": "302",
+      "courses_fail": 50
+    },
+    {
+      "courses_dept": "bioc",
+      "courses_id": "302",
+      "courses_fail": 50
+    },
+    {
+      "courses_dept": "busi",
+      "courses_id": "293",
+      "courses_fail": 50
+    },
+    {
+      "courses_dept": "chem",
+      "courses_id": "121",
+      "courses_fail": 50
+    },
+    {
+      "courses_dept": "chem",
+      "courses_id": "121",
+      "courses_fail": 50
+    },
+    {
+      "courses_dept": "japn",
+      "courses_id": "100",
+      "courses_fail": 50
+    },
+    {
+      "courses_dept": "math",
+      "courses_id": "101",
+      "courses_fail": 50
+    },
+    {
+      "courses_dept": "math",
+      "courses_id": "105",
+      "courses_fail": 50
+    },
+    {
+      "courses_dept": "math",
+      "courses_id": "220",
+      "courses_fail": 50
+    },
+    {
+      "courses_dept": "math",
+      "courses_id": "255",
+      "courses_fail": 50
+    }
+  ]
+}
+

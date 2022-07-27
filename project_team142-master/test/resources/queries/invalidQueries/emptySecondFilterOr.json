@@ -1,0 +1,22 @@
+{
+  "title": "empty second filter for or",
+  "input" :{
+    "WHERE": {
+      "OR": [
+        {
+          "GT": {
+            "courses_avg": 90
+          }
+        },
+        {}
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_id"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

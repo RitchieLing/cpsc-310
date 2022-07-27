@@ -1,0 +1,49 @@
+{
+	"title": "more than 2 logic filters",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"IS": {
+						"courses_uuid": "5374"
+					}
+				},
+				{
+					"IS": {
+						"courses_uuid": "47327"
+					}
+				},
+				{
+					"IS": {
+						"courses_uuid": "5373"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_id",
+				"courses_avg",
+				"courses_uuid"
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"courses_id": "527",
+			"courses_avg": 99.78,
+			"courses_uuid": "5373"
+		},
+		{
+			"courses_id": "527",
+			"courses_avg": 99.78,
+			"courses_uuid": "5374"
+		},
+		{
+			"courses_id": "302",
+			"courses_avg": 82.91,
+			"courses_uuid": "47327"
+		}
+	]
+}

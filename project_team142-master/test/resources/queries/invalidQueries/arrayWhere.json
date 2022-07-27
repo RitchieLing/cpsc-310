@@ -1,0 +1,27 @@
+{
+	"title": "array where, should be object",
+	"input": {
+		"WHERE": [
+			{
+				"GT": {
+					"courses_avg": 97
+				}
+			}
+		],
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept"
+			],
+			"ORDER": "courses_dept"
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept"
+			],
+			"APPLY": [
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

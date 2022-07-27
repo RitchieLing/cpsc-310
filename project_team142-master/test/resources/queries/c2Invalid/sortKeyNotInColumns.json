@@ -1,0 +1,24 @@
+{
+	"title": "sort key is not in columns",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_avg"
+			],
+			"ORDER": {
+				"keys": [
+					"courses_id"
+				],
+				"dir": "UP"
+			}
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

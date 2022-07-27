@@ -1,0 +1,19 @@
+{
+  "title": "select with duplicate columns",
+  "input" :{
+	  "WHERE": {
+		  "EQ": {
+			  "courses_avg": 96
+		  }
+	  },
+	  "OPTIONS": {
+		  "COLUMNS": [
+			  "courses_id",
+			  "courses_id",
+			  "courses_uuid"
+		  ]
+	  }
+  },
+  "errorExpected": false,
+  "with": [{"courses_id":"279","courses_uuid":"19858"},{"courses_id":"584","courses_uuid":"33374"},{"courses_id":"599","courses_uuid":"26254"},{"courses_id":"599","courses_uuid":"26258"},{"courses_id":"599","courses_uuid":"46409"},{"courses_id":"599","courses_uuid":"71164"},{"courses_id":"599","courses_uuid":"92879"},{"courses_id":"303","courses_uuid":"33760"},{"courses_id":"303","courses_uuid":"33761"},{"courses_id":"528","courses_uuid":"29285"},{"courses_id":"499","courses_uuid":"59528"},{"courses_id":"549","courses_uuid":"70959"},{"courses_id":"120","courses_uuid":"20190"},{"courses_id":"501","courses_uuid":"78244"},{"courses_id":"501","courses_uuid":"78245"},{"courses_id":"549","courses_uuid":"78270"}]
+}

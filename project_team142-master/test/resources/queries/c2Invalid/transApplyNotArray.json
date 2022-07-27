@@ -1,0 +1,30 @@
+{
+	"title": "SELECT dept, avg WHERE avg > 97",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"dept-avg"
+			],
+			"ORDER": "dept-avg"
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept"
+			],
+			"APPLY":
+				{
+					"dept-avg": {
+						"AVG": "courses_avg"
+					}
+				}
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

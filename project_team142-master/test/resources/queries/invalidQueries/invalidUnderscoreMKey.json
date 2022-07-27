@@ -1,0 +1,21 @@
+{
+  "title": "invalid m key with underscore",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg_": 98
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_uuid",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}
+

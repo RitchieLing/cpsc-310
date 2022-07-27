@@ -1,0 +1,30 @@
+{
+  "title": "array GT",
+  "input": {
+    "WHERE": {
+      "OR": [
+		  {
+			  "IS": {
+				  "courses_uuid": "47327"
+			  }
+		  },
+			{
+			  "GT": [
+				  {
+					  "courses_avg": 99
+				  }]
+			}
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg",
+        "courses_uuid"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

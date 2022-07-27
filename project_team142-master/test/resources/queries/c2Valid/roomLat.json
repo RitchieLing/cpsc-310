@@ -1,0 +1,35 @@
+{
+	"title": "room query",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"rooms_shortname": "SWNG"
+					}
+				},
+				{
+					"GT": {
+						"rooms_lat": 49
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_number",
+				"rooms_shortname",
+				"rooms_seats",
+				"rooms_lat"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"rooms_seats"
+				]
+			}
+		}
+	},
+	"errorExpected": false,
+	"with": [{"rooms_number":"221","rooms_shortname":"SWNG","rooms_seats":190,"rooms_lat":49.26293},{"rooms_number":"222","rooms_shortname":"SWNG","rooms_seats":190,"rooms_lat":49.26293},{"rooms_number":"122","rooms_shortname":"SWNG","rooms_seats":188,"rooms_lat":49.26293},{"rooms_number":"121","rooms_shortname":"SWNG","rooms_seats":187,"rooms_lat":49.26293},{"rooms_number":"105","rooms_shortname":"SWNG","rooms_seats":47,"rooms_lat":49.26293},{"rooms_number":"107","rooms_shortname":"SWNG","rooms_seats":47,"rooms_lat":49.26293},{"rooms_number":"109","rooms_shortname":"SWNG","rooms_seats":47,"rooms_lat":49.26293},{"rooms_number":"305","rooms_shortname":"SWNG","rooms_seats":47,"rooms_lat":49.26293},{"rooms_number":"307","rooms_shortname":"SWNG","rooms_seats":47,"rooms_lat":49.26293},{"rooms_number":"309","rooms_shortname":"SWNG","rooms_seats":47,"rooms_lat":49.26293},{"rooms_number":"405","rooms_shortname":"SWNG","rooms_seats":47,"rooms_lat":49.26293},{"rooms_number":"407","rooms_shortname":"SWNG","rooms_seats":47,"rooms_lat":49.26293},{"rooms_number":"409","rooms_shortname":"SWNG","rooms_seats":47,"rooms_lat":49.26293},{"rooms_number":"106","rooms_shortname":"SWNG","rooms_seats":27,"rooms_lat":49.26293},{"rooms_number":"108","rooms_shortname":"SWNG","rooms_seats":27,"rooms_lat":49.26293},{"rooms_number":"110","rooms_shortname":"SWNG","rooms_seats":27,"rooms_lat":49.26293},{"rooms_number":"306","rooms_shortname":"SWNG","rooms_seats":27,"rooms_lat":49.26293},{"rooms_number":"308","rooms_shortname":"SWNG","rooms_seats":27,"rooms_lat":49.26293},{"rooms_number":"310","rooms_shortname":"SWNG","rooms_seats":27,"rooms_lat":49.26293},{"rooms_number":"406","rooms_shortname":"SWNG","rooms_seats":27,"rooms_lat":49.26293},{"rooms_number":"408","rooms_shortname":"SWNG","rooms_seats":27,"rooms_lat":49.26293},{"rooms_number":"410","rooms_shortname":"SWNG","rooms_seats":27,"rooms_lat":49.26293}]
+}

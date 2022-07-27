@@ -1,0 +1,17 @@
+{
+  "title": "empty key for And",
+  "input" :{
+    "WHERE": {
+      "AND": [
+        {}
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_id"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

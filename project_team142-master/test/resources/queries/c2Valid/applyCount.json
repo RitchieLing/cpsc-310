@@ -1,0 +1,31 @@
+{
+	"title": "SELECT courses_dept, COUNT(courses_avg) as count WHERE courses_avg > 96 GROUP by courses_dept ORDER BY count",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 96
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"count"
+			],
+			"ORDER": "count"
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept"
+			],
+			"APPLY": [
+				{
+					"count": {
+						"COUNT": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [{"courses_dept":"adhe","count":1},{"courses_dept":"arst","count":1},{"courses_dept":"audi","count":1},{"courses_dept":"civl","count":1},{"courses_dept":"edst","count":1},{"courses_dept":"educ","count":1},{"courses_dept":"eece","count":1},{"courses_dept":"etec","count":1},{"courses_dept":"fipr","count":1},{"courses_dept":"frst","count":1},{"courses_dept":"kin","count":1},{"courses_dept":"libr","count":1},{"courses_dept":"midw","count":1},{"courses_dept":"mine","count":1},{"courses_dept":"mtrl","count":1},{"courses_dept":"musc","count":1},{"courses_dept":"plan","count":1},{"courses_dept":"psyc","count":1},{"courses_dept":"crwr","count":2},{"courses_dept":"sowk","count":2},{"courses_dept":"spph","count":3},{"courses_dept":"cnps","count":4},{"courses_dept":"math","count":8},{"courses_dept":"nurs","count":8},{"courses_dept":"epse","count":20}]
+}

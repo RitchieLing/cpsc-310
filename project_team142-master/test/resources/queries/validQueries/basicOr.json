@@ -1,0 +1,54 @@
+{
+  "title": "basic two condition OR logic",
+  "input": {
+    "WHERE": {
+      "OR": [
+		  {
+			  "IS": {
+				  "courses_uuid": "47327"
+			  }
+		  },
+			{
+			  "GT": {
+				"courses_avg": 99
+			  }
+			}
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg",
+        "courses_uuid"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_dept": "cnps",
+      "courses_id": "574",
+      "courses_avg": 99.19,
+      "courses_uuid": "26777"
+    },
+    {
+      "courses_dept": "math",
+      "courses_id": "527",
+      "courses_avg": 99.78,
+      "courses_uuid": "5373"
+    },
+    {
+      "courses_dept": "math",
+      "courses_id": "527",
+      "courses_avg": 99.78,
+      "courses_uuid": "5374"
+    },
+    {
+      "courses_dept": "nurs",
+      "courses_id": "302",
+      "courses_avg": 82.91,
+      "courses_uuid": "47327"
+    }
+  ]
+}

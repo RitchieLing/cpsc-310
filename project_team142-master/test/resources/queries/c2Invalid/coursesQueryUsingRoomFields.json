@@ -1,0 +1,28 @@
+{
+  "title": "courses query using rooms fields seats",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "courses_seats": 92
+          }
+        },
+        {
+          "IS": {
+            "courses_dept": "adhe"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

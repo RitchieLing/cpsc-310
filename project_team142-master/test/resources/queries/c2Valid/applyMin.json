@@ -1,0 +1,31 @@
+{
+	"title": "SELECT courses_dept, MIN(courses_avg) as min WHERE courses_avg > 96 GROUP by courses_dept ORDER BY min",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 96
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"min"
+			],
+			"ORDER": "min"
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept"
+			],
+			"APPLY": [
+				{
+					"min": {
+						"MIN": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [{"courses_dept":"epse","min":96.03},{"courses_dept":"kin","min":96.06},{"courses_dept":"sowk","min":96.09},{"courses_dept":"libr","min":96.1},{"courses_dept":"adhe","min":96.11},{"courses_dept":"cnps","min":96.16},{"courses_dept":"math","min":96.25},{"courses_dept":"mtrl","min":96.25},{"courses_dept":"civl","min":96.27},{"courses_dept":"frst","min":96.36},{"courses_dept":"fipr","min":96.4},{"courses_dept":"edst","min":96.46},{"courses_dept":"etec","min":96.47},{"courses_dept":"plan","min":96.47},{"courses_dept":"midw","min":96.5},{"courses_dept":"musc","min":96.5},{"courses_dept":"mine","min":96.59},{"courses_dept":"nurs","min":96.64},{"courses_dept":"spph","min":96.8},{"courses_dept":"audi","min":96.9},{"courses_dept":"arst","min":96.94},{"courses_dept":"crwr","min":97},{"courses_dept":"psyc","min":97},{"courses_dept":"educ","min":97.5},{"courses_dept":"eece","min":98.75}]
+}

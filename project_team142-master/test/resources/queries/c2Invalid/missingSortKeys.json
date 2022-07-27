@@ -1,0 +1,24 @@
+{
+	"title": "sort keys are empty array",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_avg",
+				"courses_pass"
+			],
+			"ORDER": {
+				"keys": [
+				],
+				"dir": "DOWN"
+			}
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

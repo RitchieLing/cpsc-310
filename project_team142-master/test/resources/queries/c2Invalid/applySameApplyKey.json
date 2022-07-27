@@ -1,0 +1,37 @@
+{
+	"title": "SELECT courses_dept, SUM(courses_avg) as sum, SUM(courses_avg) as sum WHERE courses_avg > 96 GROUP by courses_dept ORDER BY sum",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"sum",
+				"sum"
+			],
+			"ORDER": "sum"
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept"
+			],
+			"APPLY": [
+				{
+					"sum": {
+						"SUM": "courses_avg"
+					}
+				},
+				{
+					"sum": {
+						"SUM": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

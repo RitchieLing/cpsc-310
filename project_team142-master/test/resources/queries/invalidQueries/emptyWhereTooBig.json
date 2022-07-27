@@ -1,0 +1,14 @@
+{
+  "title": "empty where happens to give ResultTooLargeError",
+  "input" :{
+    "WHERE": {
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_id"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "ResultTooLargeError"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "options missing columns",
+  "input": {
+    "WHERE": {
+      "NOT": {
+        "NOT": {
+          "AND": [
+            {
+              "GT": {
+                "courses_avg": 93
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "cpsc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "OPTIONS": {
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

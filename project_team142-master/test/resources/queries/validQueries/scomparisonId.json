@@ -1,0 +1,141 @@
+{
+  "title": "test s field id",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_id": "588"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 88.7
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 88.7
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.67
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.67
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 92.83
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 92.83
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.67
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.67
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.38
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.38
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 85.3
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 85.3
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 82.6
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 82.6
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 84
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 84
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 82.5
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 82.5
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 85.6
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 85.6
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 81.67
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 81.67
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 85
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "588",
+      "courses_avg": 85
+    }
+  ]
+}
+

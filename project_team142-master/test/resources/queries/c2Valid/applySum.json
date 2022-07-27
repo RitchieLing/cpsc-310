@@ -1,0 +1,31 @@
+{
+	"title": "SELECT courses_dept, SUM(courses_avg) as sum WHERE courses_avg > 96 GROUP by courses_dept ORDER BY sum",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 96
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"sum"
+			],
+			"ORDER": "sum"
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept"
+			],
+			"APPLY": [
+				{
+					"sum": {
+						"SUM": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [{"courses_dept":"adhe","sum":96.11},{"courses_dept":"mine","sum":96.59},{"courses_dept":"psyc","sum":97},{"courses_dept":"educ","sum":97.5},{"courses_dept":"kin","sum":192.12},{"courses_dept":"libr","sum":192.2},{"courses_dept":"mtrl","sum":192.5},{"courses_dept":"civl","sum":192.54},{"courses_dept":"frst","sum":192.72},{"courses_dept":"fipr","sum":192.8},{"courses_dept":"edst","sum":192.92},{"courses_dept":"etec","sum":192.94},{"courses_dept":"plan","sum":192.94},{"courses_dept":"midw","sum":193},{"courses_dept":"musc","sum":193},{"courses_dept":"audi","sum":193.8},{"courses_dept":"arst","sum":193.88},{"courses_dept":"eece","sum":197.5},{"courses_dept":"sowk","sum":288.39},{"courses_dept":"crwr","sum":293},{"courses_dept":"cnps","sum":486.62},{"courses_dept":"spph","sum":488.52},{"courses_dept":"math","sum":1458.57},{"courses_dept":"nurs","sum":1564.46},{"courses_dept":"epse","sum":3018.86}]
+}

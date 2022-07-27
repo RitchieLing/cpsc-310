@@ -1,0 +1,33 @@
+{
+	"title": "SELECT courses_dept, courses_id, AVG(courses_avg) as dept-avg WHERE courses_avg > 97 GROUP by courses_dept, courses_id ORDER BY dept-avg",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_id",
+				"dept-avg"
+			],
+			"ORDER": "dept-avg"
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept",
+				"courses_id"
+			],
+			"APPLY": [
+				{
+					"dept-avg": {
+						"AVG": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [{"courses_dept":"epse","courses_id":"596","dept-avg":97.09},{"courses_dept":"math","courses_id":"541","dept-avg":97.09},{"courses_dept":"math","courses_id":"525","dept-avg":97.25},{"courses_dept":"nurs","courses_id":"591","dept-avg":97.33},{"courses_dept":"math","courses_id":"532","dept-avg":97.48},{"courses_dept":"educ","courses_id":"500","dept-avg":97.5},{"courses_dept":"epse","courses_id":"534","dept-avg":97.59},{"courses_dept":"epse","courses_id":"606","dept-avg":97.67},{"courses_dept":"epse","courses_id":"549","dept-avg":97.69},{"courses_dept":"epse","courses_id":"421","dept-avg":97.94},{"courses_dept":"crwr","courses_id":"599","dept-avg":98},{"courses_dept":"cnps","courses_id":"574","dept-avg":98.04},{"courses_dept":"nurs","courses_id":"578","dept-avg":98.2},{"courses_dept":"epse","courses_id":"519","dept-avg":98.45},{"courses_dept":"nurs","courses_id":"509","dept-avg":98.46},{"courses_dept":"epse","courses_id":"449","dept-avg":98.48},{"courses_dept":"eece","courses_id":"541","dept-avg":98.75},{"courses_dept":"spph","courses_id":"300","dept-avg":98.98},{"courses_dept":"math","courses_id":"527","dept-avg":99.78}]
+	}

@@ -1,0 +1,82 @@
+{
+  "title": "test s field title",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_title": "env phil & educ"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg",
+        "courses_title"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 88.7,
+      "courses_title": "env phil & educ"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 88.7,
+      "courses_title": "env phil & educ"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.67,
+      "courses_title": "env phil & educ"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.67,
+      "courses_title": "env phil & educ"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 92.83,
+      "courses_title": "env phil & educ"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 92.83,
+      "courses_title": "env phil & educ"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.67,
+      "courses_title": "env phil & educ"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.67,
+      "courses_title": "env phil & educ"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.38,
+      "courses_title": "env phil & educ"
+    },
+    {
+      "courses_dept": "edst",
+      "courses_id": "588",
+      "courses_avg": 87.38,
+      "courses_title": "env phil & educ"
+    }
+  ]
+}
+
